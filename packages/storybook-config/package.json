@@ -1,0 +1,17 @@
+{
+  "name": "@repo/storybook-config",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "exports": {
+    "./preset": "./preset.ts",
+    "./base-preview": "./base-preview.ts"
+  },
+  "devDependencies": {
+    "@storybook/addon-docs": "^10.0.7",
+    "@storybook/addon-links": "^10.0.7",
+    "@storybook/addon-onboarding": "^10.0.7",
+    "@storybook/react-vite": "^10.0.7",
+    "storybook": "^10.0.7"
+  }
+}
