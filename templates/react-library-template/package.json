@@ -1,0 +1,31 @@
+{
+  "name": "@repo/react-library-template",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts",
+    "./MyButton": "./src/components/index.ts",
+    "./MyCounter": "./src/components/index.ts"
+  },
+  "scripts": {
+    "lint": "eslint --max-warnings 0",
+    "check-types": "tsc --noEmit",
+    "clean": "rimraf node_modules dist"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "^20.19.5",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "eslint": "^9.39.1",
+    "sass-embedded": "^1.70.0",
+    "typescript": "5.9.3",
+    "vite": "^7.2.2"
+  },
+  "dependencies": {
+    "clsx": "^2.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}
