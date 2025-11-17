@@ -10,10 +10,19 @@
 pnpm run turbo gen workspace --type package --copy @repo/react-library-template --name @repo/library-name
 ```
 
-修改 `packages\storybook-config\preset.ts` 的 `resolve` 部分
-
 #### 应用
 
 ```
 pnpm run turbo gen workspace --type app --copy @repo/react-vite-app-template --name @repo/app-name
+```
+
+## 常见问题
+
+### Windows stdio in console mode does not support writing non-UTF-8 byte sequences
+
+修改PowerShell编码设置（当前会话）
+
+```
+[Console]::OutputEncoding = [System.Text.Encoding]::UTF8
+[Console]::InputEncoding = [System.Text.Encoding]::UTF8
 ```

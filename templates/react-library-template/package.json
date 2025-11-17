@@ -11,7 +11,7 @@
     "lint": "eslint --max-warnings 0",
     "check-types": "tsc --noEmit",
     "clean": "rimraf node_modules dist storybook-static",
-    "storybook": "storybook dev -p 6006",
+    "storybook": "storybook dev",
     "build-storybook": "storybook build"
   },
   "devDependencies": {
