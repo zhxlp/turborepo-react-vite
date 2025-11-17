@@ -1,5 +1,5 @@
 {
-    "name": "react-vite",
+  "name": "react-vite",
   "private": true,
   "scripts": {
     "build": "turbo run build",
@@ -7,6 +7,7 @@
     "lint": "turbo run lint",
     "check-types": "turbo run check-types",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "turbo": "turbo",
     "clean": "turbo run clean && rimraf node_modules",
     "storybook:dev": "turbo run storybook",
     "storybook:build": "turbo run build-storybook"
