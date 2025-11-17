@@ -4,8 +4,9 @@
   "private": true,
   "exports": {
     ".": "./src/index.ts",
-    "./MyButton": "./src/components/index.ts",
-    "./MyCounter": "./src/components/index.ts"
+    "./components": "./src/components/index.ts",
+    "./components/MyButton": "./src/components/MyButton/index.ts",
+    "./components/MyCounter": "./src/components/MyCounter/index.ts"
   },
   "scripts": {
     "lint": "eslint --max-warnings 0",

@@ -1,7 +1,7 @@
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
-import { MyCounter } from "@repo/react-library-template";
+import { MyCounter } from "@repo/react-library-template/components/MyCounter";
 
 function App() {
   return (

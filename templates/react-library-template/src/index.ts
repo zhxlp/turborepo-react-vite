@@ -1,2 +1,1 @@
-export { MyButton } from "./components/MyButton";
-export { MyCounter } from "./components/MyCounter";
+export * from "./components";
