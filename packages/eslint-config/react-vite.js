@@ -1,6 +1,6 @@
 import reactRefresh from 'eslint-plugin-react-refresh'
 import { globalIgnores } from "eslint/config";
-import { config as reactBaseConfig } from "./base.js";
+import { config as reactBaseConfig } from "./react-base.js";
 
 /**
  * A custom ESLint configuration for libraries that use React.

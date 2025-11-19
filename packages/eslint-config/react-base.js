@@ -1,10 +1,10 @@
 import js from "@eslint/js";
 import eslintConfigPrettier from "eslint-config-prettier";
-import tseslint from "typescript-eslint";
-import pluginReactHooks from "eslint-plugin-react-hooks";
 import pluginReact from "eslint-plugin-react";
+import pluginReactHooks from "eslint-plugin-react-hooks";
 import storybook from "eslint-plugin-storybook";
 import globals from "globals";
+import tseslint from "typescript-eslint";
 import { config as baseConfig } from "./base.js";
 
 /**
@@ -17,6 +17,7 @@ export const config = [
   eslintConfigPrettier,
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
+  ...storybook.configs["flat/recommended"],
   {
     languageOptions: {
       ...pluginReact.configs.flat.recommended.languageOptions,
@@ -38,7 +39,8 @@ export const config = [
     },
   },
   {
-    files: ["**/*.stories.@(ts|tsx|js|jsx|mjs|cjs)"],
-    extends: [...storybook.configs["flat/recommended"]],
+    rules: {
+      "react/prop-types": "off",
+    },
   },
 ];
