@@ -1,0 +1,39 @@
+{
+  "name": "@repo/storybook",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "storybook dev -p 6006",
+    "build": "storybook build",
+    "serve": "serve storybook-static -l 6006",
+    "lint": "eslint --max-warnings 0",
+    "typecheck": "tsc --noEmit",
+    "clean": "rimraf dist storybook-static",
+    "reset": "rimraf dist storybook-static node_modules"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "workspace:*",
+    "@repo/typescript-config": "workspace:*",
+    "@storybook/addon-docs": "^10.1.0",
+    "@storybook/addon-links": "^10.1.0",
+    "@storybook/addon-onboarding": "^10.1.0",
+    "@storybook/react-vite": "^10.1.0",
+    "@types/node": "^20.19.5",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "eslint": "^9.39.1",
+    "eslint-plugin-storybook": "^10.1.0",
+    "sass-embedded": "^1.70.0",
+    "storybook": "^10.1.0",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.4",
+    "vite-plugin-sass-dts": "^1.3.34"
+  },
+  "dependencies": {
+    "@repo/react-library-template": "workspace:*",
+    "@repo/tooltip": "workspace:*",
+    "clsx": "^2.1.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
+}

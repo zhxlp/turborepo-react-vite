@@ -2,21 +2,25 @@
   "name": "react-vite",
   "private": true,
   "scripts": {
+    "turbo": "turbo",
     "build": "turbo run build",
     "dev": "turbo run dev",
     "lint": "turbo run lint",
-    "check-types": "turbo run check-types",
+    "typecheck": "turbo run typecheck",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "turbo": "turbo",
-    "clean": "turbo run clean && rimraf node_modules",
-    "storybook:dev": "turbo run storybook",
-    "storybook:build": "turbo run build-storybook"
+    "clean": "turbo run clean",
+    "reset": "turbo run reset && rimraf node_modules"
   },
   "devDependencies": {
-    "prettier": "^3.6.2",
-    "rimraf": "^6.1.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "prettier": "^3.7.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rimraf": "^6.1.2",
     "turbo": "^2.6.1",
-    "typescript": "5.9.3"
+    "typescript": "^5.9.3",
+    "vite": "^7.2.4"
   },
   "packageManager": "pnpm@10.22.0"
 }

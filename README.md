@@ -10,12 +10,6 @@
 pnpm run turbo gen workspace --type package --copy @repo/react-library-template --name @repo/library-name
 ```
 
-#### 应用
-
-```
-pnpm run turbo gen workspace --type app --copy @repo/react-vite-app-template --name @repo/app-name
-```
-
 ## 常见问题
 
 ### Windows stdio in console mode does not support writing non-UTF-8 byte sequences
