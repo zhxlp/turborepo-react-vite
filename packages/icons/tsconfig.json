@@ -2,7 +2,7 @@
   "extends": "@repo/typescript-config/react-library.json",
   "compilerOptions": {
     "outDir": "dist",
-    "types": ["vite-plugin-svgr/client"]
+    "types": ["@repo/typescript-config/types/react-library"]
   },
-  "include": ["src"]
+  "include": ["src", "vite.config.ts"]
 }

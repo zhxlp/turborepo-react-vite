@@ -1,0 +1,18 @@
+{
+  "name": "@repo/vite-config",
+  "version": "0.0.0",
+  "type": "module",
+  "private": true,
+  "exports": {
+    "./react-library": "./react-library.js"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.1.1",
+    "typescript": "^5.9.3",
+    "vite": "^7.2.4",
+    "vite-plugin-dts": "^4.5.4",
+    "vite-plugin-lib-inject-css": "^2.2.2",
+    "vite-plugin-sass-dts": "^1.3.34",
+    "vite-plugin-svgr": "^4.5.0"
+  }
+}
