@@ -1,6 +1,10 @@
 import type { Meta, StoryObj } from "@storybook/react-vite";
 import { MyButton } from "@repo/react-library-template";
 import { fn } from "storybook/test";
+import { generateComponentDescription } from "../utils";
+
+const ComponentName = "MyButton";
+const ComponentPackageName = "@repo/react-library-template";
 
 const meta = {
   title: "Components/MyButton",
@@ -8,6 +12,16 @@ const meta = {
   args: {
     label: "MyButton",
     onClick: fn(),
+  },
+  parameters: {
+    docs: {
+      description: {
+        component: generateComponentDescription({
+          componentName: ComponentName,
+          componentPackageName: ComponentPackageName,
+        }),
+      },
+    },
   },
 } satisfies Meta<typeof MyButton>;
 

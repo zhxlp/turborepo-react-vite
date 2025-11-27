@@ -1,5 +1,6 @@
 import type { StorybookConfig } from "@storybook/react-vite";
 import sassDts from "vite-plugin-sass-dts";
+import svgr from "vite-plugin-svgr";
 
 const config: StorybookConfig = {
   framework: {
@@ -16,7 +17,7 @@ const config: StorybookConfig = {
     reactDocgen: "react-docgen-typescript",
   },
   viteFinal: (config) => {
-    config.plugins?.push(sassDts());
+    config.plugins?.push(sassDts(), svgr());
     return config;
   },
 };

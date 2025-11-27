@@ -1,5 +1,9 @@
-import type { Meta, StoryObj } from "@storybook/react-vite";
 import { MyCounter } from "@repo/react-library-template";
+import type { Meta, StoryObj } from "@storybook/react-vite";
+import { generateComponentDescription } from "../utils";
+
+const ComponentName = "MyCounter";
+const ComponentPackageName = "@repo/react-library-template";
 
 const meta = {
   title: "Components/MyCounter",
@@ -7,6 +11,16 @@ const meta = {
   args: {
     initialValue: 0,
     step: 1,
+  },
+  parameters: {
+    docs: {
+      description: {
+        component: generateComponentDescription({
+          componentName: ComponentName,
+          componentPackageName: ComponentPackageName,
+        }),
+      },
+    },
   },
 } satisfies Meta<typeof MyCounter>;
 
